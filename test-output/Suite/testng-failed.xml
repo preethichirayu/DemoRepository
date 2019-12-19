@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test name="chromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Scripts.actitime_login">
+        <methods>
+          <include name="loginscript"/>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="precondtion"/>
+          <include name="precondtion"/>
+        </methods>
+      </class> <!-- Scripts.actitime_login -->
+      <class name="Scripts.actitime_logout">
+        <methods>
+          <include name="loginscript"/>
+          <include name="precondtion"/>
+          <include name="precondtion"/>
+        </methods>
+      </class> <!-- Scripts.actitime_logout -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test name="firefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Scripts.actitime_login">
+        <methods>
+          <include name="loginscript"/>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="precondtion"/>
+          <include name="precondtion"/>
+        </methods>
+      </class> <!-- Scripts.actitime_login -->
+      <class name="Scripts.actitime_logout">
+        <methods>
+          <include name="loginscript"/>
+          <include name="precondtion"/>
+          <include name="precondtion"/>
+        </methods>
+      </class> <!-- Scripts.actitime_logout -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
